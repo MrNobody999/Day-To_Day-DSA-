@@ -26,9 +26,16 @@ int main() {
 
   cout << "Ganpati Bappa Morya.\n";
 
-  string str1 = "gram";
-  string str2 = "arm";
+  //string str1 = "gram";
+  //string str2 = "arm";
 
+  string str1 , str2;
+  cout<<"First String: "<<endl;
+  cin>>str1;
+
+  cout<<"Second string: "<<endl;
+  cin>>str2;
+  
   if (areAnagram(str1, str2) == true) {
     cout << "Strings are anagram";
   } else {
