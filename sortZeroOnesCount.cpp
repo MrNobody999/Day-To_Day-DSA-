@@ -15,13 +15,12 @@ void sortZeroOnes(int arr[], int size) {
     }
   }
 
-  for (int i = 0; i < countZero; i++) {
-    cout << "0"
-         << " ";
+  int i;
+  for (i = 0; i < countZero; i++) {
+    arr[i] = 0;
   }
-  for (int i = 0; i < countOne; i++) {
-    cout << "1"
-         << " ";
+  for (int j = i; j < size; j++) {
+    arr[j] = 1;
   }
 }
 
@@ -30,5 +29,10 @@ int main() {
   int size = 15; // 1-6  0-9
 
   sortZeroOnes(arr, size);
+
+  for (int i = 0; i < size; i++) {
+    cout << arr[i] << " ";
+  }
+
   return 0;
 }
