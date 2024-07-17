@@ -2,7 +2,7 @@
 #include <limits.h>
 using namespace std;
 
-int maximumElement(int arr[][3], int row, int col, int target) {
+int maximumElement(int arr[][3], int row, int col) {
   int maxi= INT_MIN;
   for (int i = 0; i < row; i++) {
     for (int j = 0; j < col; j++) {
@@ -21,9 +21,7 @@ int main() {
   int row = 3;
   int col = 3;
 
-  int target = 90;
-
-  int result = maximumElement(arr, row, col, target);
+  int result = maximumElement(arr, row, col);
 
   cout << "Maximum element in 2-d array is: "<< result << endl;
   
