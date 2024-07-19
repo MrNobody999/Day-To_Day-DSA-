@@ -4,7 +4,7 @@ using namespace std;
 
 void transposeMatrix(int arr[][4], int row, int col) {
   for (int i = 0; i < row; i++) {
-    for (int j = i + 1; j < col; j++) {
+    for (int j = i; j < col; j++) {
       if (i == j) {
         continue;
       } else {
