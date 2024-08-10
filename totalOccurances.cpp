@@ -66,7 +66,7 @@ int main() {
   if (ans == -1) {
     cout << "Element not found";
   } else {
-    cout << "Total occurance of " << target << " is/are : " << ans<< endl;
+    cout << "Total occurances of " << target << " is/are : " << ans<< endl;
   }
 
   return 0;
