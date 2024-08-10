@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int binarySearch(vector<int> arr, int n, int target) {
+int firstOccurance(vector<int> arr, int n, int target) {
   int start = 0;
   int end = n - 1;
   int mid = (start + end) / 2;
@@ -30,12 +30,12 @@ int main() {
   int target = 30;
   int n = arr.size();
 
-  int ans = binarySearch(arr, n, target);
+  int ans = firstOccurance(arr, n, target);
 
   if (ans == -1) {
     cout << "Element not found";
   } else {
-    cout << "Element found at index : " << ans << endl;
+    cout << "First occurance of " << target <<" found at index : " << ans << endl;
   }
 
   return 0;
